@@ -7,6 +7,7 @@ import NetworkType from '@suiware/kit/NetworkType'
 import { APP_NAME } from '../../config/main'
 import Image from 'next/image'
 import Logo from '../../assets/logo.svg'
+import PrimaryButton from './PrimaryButton'
 
 const Header = () => {
   return (
@@ -22,7 +23,10 @@ const Header = () => {
           alt="Logo"
           className="h-12 w-12"
         />
-        <div className="pt-1 text-xl sm:text-2xl">{APP_NAME}</div>
+        <div className="pt-1 text-xl sm:text-2xl flex items-center gap-2">
+          {APP_NAME}
+          <PrimaryButton href="https://gamma.app/docs/Narval-Protocol-xi5lh3x74jxabvj?mode=doc" className="ml-2 px-4 py-2 text-base">pitchdeck</PrimaryButton>
+        </div>
       </Link>
 
       <div className="flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row">

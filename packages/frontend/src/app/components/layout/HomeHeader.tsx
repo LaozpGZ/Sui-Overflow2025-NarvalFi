@@ -1,12 +1,13 @@
-import React from 'react';
-import { Github } from 'lucide-react';
-import PrimaryButton from './PrimaryButton';
+'use client'
+
+import { Github } from 'lucide-react'
+import PrimaryButton from './PrimaryButton'
 
 /**
  * HomeHeader - Hero section for the homepage, including logo, title, description, and main buttons.
  * No props.
  */
-const HomeHeader: React.FC = () => {
+export default function HomeHeader() {
   return (
     <header className="z-10 relative flex flex-col items-center pt-24 pb-16">
       {/* Logo and brand */}
@@ -24,11 +25,17 @@ const HomeHeader: React.FC = () => {
         Built on Sui, it integrates lending, vaults, and DEX into a single, composable liquidity layer.
       </p>
       <div className="flex flex-wrap gap-4 justify-center">
-        <PrimaryButton href="https://docs.narvalfi.com">
-          Explore Documentation
+        <PrimaryButton href="https://github.com/OlendDAO/Sui-Overflow2025-NarvalFi/tree/main/packages/contract/narval/sources">
+          Sui Move Contract Repository
+        </PrimaryButton>
+        <PrimaryButton href="https://gamma.app/docs/Narval-Protocol-xi5lh3x74jxabvj?mode=doc">
+          pitchdeck
+        </PrimaryButton>
+        <PrimaryButton href="https://testnet.suivision.xyz/package/0x33047971c0172f7f4d8f9d0b41d2e5400d2cab4ec040202a7113c08f453acfd6?tab=Code">
+          Testnet Package Address
         </PrimaryButton>
         <a
-          href="https://github.com/LaozpGZ/Sui-Overflow2025-NarvalFi"
+          href="https://github.com/Olenddao/Sui-Overflow2025-NarvalFi"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-white/10 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 flex items-center gap-2"
@@ -38,7 +45,5 @@ const HomeHeader: React.FC = () => {
         </a>
       </div>
     </header>
-  );
-};
-
-export default HomeHeader; 
+  )
+}
