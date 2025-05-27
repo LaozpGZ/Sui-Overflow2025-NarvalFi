@@ -20,6 +20,12 @@ export default function Home() {
       <div className="absolute bottom-0 left-1/4 w-1/2 h-96 bg-cyan-500/20 blur-[120px] rounded-full"></div>
       <HomeHeader />
       <main className="z-10 relative flex flex-col items-center justify-center gap-16 flex-1 px-4">
+        {/* Mermaid 图片展示 */}
+        <div className="flex flex-col gap-6 items-center justify-center w-full my-8">
+          <img src="/png/1mermaid.png" alt="Mermaid 1" className="max-w-5xl rounded-lg shadow-lg" />
+          <img src="/png/2mermaid.png" alt="Mermaid 2" className="max-w-5xl rounded-lg shadow-lg" />
+          <img src="/png/3mermaid.png" alt="Mermaid 3" className="max-w-5xl rounded-lg shadow-lg" />
+        </div>
         <ProtocolHighlights />
         <ProtocolArchitecture />
         <CapitalEfficiency />
